@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tabviews"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.example.tabviews.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tabviews.ClassDemoActivity"
+            android:label="@string/title_activity_class_demo"
+            android:parentActivityName="FragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="FragmentActivity" />
+        </activity>
+        <activity
+            android:name="com.example.tabviews.OPAC"
+            android:label="@string/title_activity_login_page" >
+        </activity>
+        <activity
+            android:name="com.example.tabviews.BookPageActivity"
+            android:label="@string/title_activity_book_page" >
+        </activity>
+        <activity
+            android:name="com.example.tabviews.SearchMemberActivity"
+            android:label="@string/title_activity_search_member" >
+        </activity>
+        <activity
+            android:name="com.example.tabviews.IssueActivity"
+            android:label="@string/title_activity_issue" >
+        </activity>
+        <activity
+            android:name="com.example.tabviews.BookCopies"
+            android:label="@string/title_activity_book_copies" >
+        </activity>
+        <activity
+            android:name="com.example.tabviews.TransActivity"
+            android:label="@string/title_activity_trans" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

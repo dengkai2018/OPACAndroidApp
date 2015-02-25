@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/book_page_fragment"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context="com.example.spinner.MainActivity$PlaceholderFragment" >
+       
+
+<TextView
+    android:id="@+id/Book_page"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp"
+    android:text="@string/Book_Page"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+	   
+   <TextView
+       android:id="@+id/searchT"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/Book_page"
+       android:layout_marginTop="28dp"
+       android:text="@string/searchT"
+       android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/search_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchopt"
+        android:layout_below="@+id/searchopt"
+        android:layout_marginTop="18dp"
+        android:text="Keyword"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_T"
+        android:layout_below="@+id/search_T"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <Spinner
+        android:id="@+id/searchopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchT"
+        android:layout_below="@+id/searchT"
+        android:layout_marginTop="15dp"
+        android:entries="@array/search_array"
+        android:prompt="@string/searchT" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Book_page"
+        android:layout_below="@+id/keyword"
+        android:layout_marginTop="28dp"
+        android:background="@color/background"
+        android:onClick="search"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/searchB" />
+    
+
+</RelativeLayout>

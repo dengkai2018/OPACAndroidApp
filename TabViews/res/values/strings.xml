@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OPAC</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_class_demo">ClassDemoActivity</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="attempts"> Attempts Left</string>
+    <string name="title_activity_login_page">LoginPageActivity</string>
+    <string name="Book_Page">Book Page</string>
+    <string name="searchT">Search option</string>
+    <string name="searchB">Search</string>
+    <string name="rate_this_book">Rate this book</string>
+    <string name="book_desc">Book description</string>
+    <string name="search_hint">Find a member</string>
+
+    <string-array name="search_array">
+        <item>Call No.</item>
+        <item>Title</item>
+        <item>Author</item>
+        <item>Accession No.</item>
+    </string-array>
+
+    <string name="title_activity_book_page">BookPageActivity</string>
+    <string name="title_activity_search_member">SearchMemberActivity</string>
+    <string name="title_activity_issue">IssueActivity</string>
+    <string name="title_activity_book_copies">BookCopies</string>
+    <string name="title_activity_trans">TransActivity</string>
+    <string name="book_options_dialog_title">Did you mean?</string>
+
+</resources>

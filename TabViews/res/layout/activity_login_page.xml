@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context="com.example.loginscreen.MainActivity"
+   android:background="@drawable/bg" >
+
+
+
+   <EditText
+      android:id="@+id/editText1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="150dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="3dp"
+      android:ems="10"
+      android:hint="@string/username"
+      android:textColorHint="#868e88"
+      android:background="#ffffff"
+      android:drawableLeft="@drawable/ic_action_person"
+       >
+
+      <requestFocus />
+   </EditText>
+
+   <Button
+      android:id="@+id/button1"
+      android:layout_width="match_parent"
+      android:layout_height="34dp"
+      android:layout_below="@+id/editText2"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="17dp"
+      android:layout_marginLeft="17dp"
+      android:layout_marginRight="17dp"
+      android:onClick="login"
+      android:text="@string/Login"
+      android:background="#31d05d" />
+
+ <!--  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/button1"
+      android:layout_marginTop="48dp"
+      android:text="@string/username"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textColor="#ffffff" />
+      -->
+      
+
+   <EditText
+       android:id="@+id/editText2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/editText1"
+       android:background="#ffffff"
+       android:ems="10"
+       android:hint="@string/password"
+       android:inputType="textPassword"
+       android:paddingBottom="5dp"
+       android:paddingTop="7dp"
+       android:paddingLeft="5dp"
+       android:textColorHint="#868e88" />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/button1"
+       android:layout_marginRight="24dp"
+       android:layout_marginTop="48dp"
+       android:text="@string/attempts"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textColor="#ffffff"
+       android:visibility="invisible">
+      </TextView>
+
+</RelativeLayout>
